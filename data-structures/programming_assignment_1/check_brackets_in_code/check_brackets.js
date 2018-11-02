@@ -52,11 +52,11 @@ const mainFromStdinput = () => {
         process.exit();
     })
 }
-//mainFromStdinput()
+mainFromStdinput()
 
 const mainTest = () => {
-    console.log(findMismtach('['))
+    console.log(findMismtach('[]'))
     process.exit()
 }
 
-mainTest()
+//mainTest()

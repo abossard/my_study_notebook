@@ -26,8 +26,7 @@ const findMismtach = text => {
             bracketStack.push({ bracket: char, position: i })
         }
         if (pairs.filter(pair => pair[1] === char).length > 0) {
-            const left = bracketStack.pop()
-            if (!areMatching(left.bracket, char)) {
+            if (bracketStack.length === 0 || !areMatching(bracketStack.pop().bracket, char)) {
                 return i + 1
             }
         }

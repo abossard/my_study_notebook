@@ -12,7 +12,7 @@ function calcFibLoop(n) {
   let number1 = 0
   let number2 = 1
   for(let i = 1; i < n; i++) {
-    let sum = number1 + number2
+    let sum = number1 % 10 + number2 % 10
     number1 = number2
     number2 = sum
   }
@@ -26,7 +26,7 @@ function readLine (line) {
 }
 
 function main() {
-  console.log(calcFibLoop(1000000000000));
+  console.log(calcFibLoop(100025));
   process.exit()
 }
-main()
+//main()

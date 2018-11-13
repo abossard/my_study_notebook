@@ -19,6 +19,9 @@ function calcFib(n) {
 }
 
 function calcFibLoop(n) {
+  if(n === 0) {
+    return 0
+  }
   let number1 = 0
   let number2 = 1
   for(let i = 1; i < n; i++) {
@@ -36,9 +39,7 @@ function readLine (line) {
 }
 
 function main() {
-  for(let i=1; i < 10; i++) {
-    console.log(`${i} = ${calcFibLoop(i)}`);
-  }
+  console.log(calcFibLoop(0));
   process.exit()
 }
 //main()

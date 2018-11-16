@@ -1,4 +1,4 @@
-function greaterOrEqual(a, b) {
+function greaterOrEqual(digit, b) {
 
 }
 
